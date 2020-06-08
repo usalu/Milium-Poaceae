@@ -1,0 +1,129 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiliumRhino6", "MiliumRhino6\MiliumRhino6.csproj", "{40404AB0-3F13-4427-9CCB-64804194CADA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiliumRhino5", "MiliumRhino5\MiliumRhino5.csproj", "{77930B49-6A92-4B82-B44D-D4EFDD3AC119}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GH_MIDI", "GH_MIDI", "{B948810B-8F47-4008-B99B-93A8E66F7871}"
+	ProjectSection(SolutionItems) = preProject
+		GH_MIDI\MonitorInputDevices.cs = GH_MIDI\MonitorInputDevices.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{40C31AF8-0CAD-455D-B4BB-ECC413D4EB1D}"
+	ProjectSection(SolutionItems) = preProject
+		GH_MIDI\Components\ButtonComponent.cs = GH_MIDI\Components\ButtonComponent.cs
+		GH_MIDI\Components\ButtonComponentAttributes.cs = GH_MIDI\Components\ButtonComponentAttributes.cs
+		GH_MIDI\Components\DecodeMIDIInComponent.cs = GH_MIDI\Components\DecodeMIDIInComponent.cs
+		GH_MIDI\Components\MIDIInComponent.cs = GH_MIDI\Components\MIDIInComponent.cs
+		GH_MIDI\Components\SelectSpecificGHObjectsComponent.cs = GH_MIDI\Components\SelectSpecificGHObjectsComponent.cs
+		GH_MIDI\Components\SelectTreeItemsComponent.cs = GH_MIDI\Components\SelectTreeItemsComponent.cs
+		GH_MIDI\Components\StoreMIDIMessagesComponent.cs = GH_MIDI\Components\StoreMIDIMessagesComponent.cs
+		GH_MIDI\Components\SynchronizeSlidersComponent.cs = GH_MIDI\Components\SynchronizeSlidersComponent.cs
+		GH_MIDI\Components\SynchronizeTogglesComponent.cs = GH_MIDI\Components\SynchronizeTogglesComponent.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enums", "Enums", "{DD25D036-4EEF-41C3-9D1A-E59A088D1FD8}"
+	ProjectSection(SolutionItems) = preProject
+		GH_MIDI\Components\Enums\ChannelValueList.cs = GH_MIDI\Components\Enums\ChannelValueList.cs
+		GH_MIDI\Components\Enums\ControllerValueList.cs = GH_MIDI\Components\Enums\ControllerValueList.cs
+		GH_MIDI\Components\Enums\PercussionValueList.cs = GH_MIDI\Components\Enums\PercussionValueList.cs
+		GH_MIDI\Components\Enums\SelectInstrumentComponent.cs = GH_MIDI\Components\Enums\SelectInstrumentComponent.cs
+		GH_MIDI\Components\Enums\SelectPitchComponent.cs = GH_MIDI\Components\Enums\SelectPitchComponent.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Filter", "Filter", "{88424C8D-4174-4508-B4F0-057BD203F571}"
+	ProjectSection(SolutionItems) = preProject
+		GH_MIDI\Components\Filter\ChannelPressureFilterComponent.cs = GH_MIDI\Components\Filter\ChannelPressureFilterComponent.cs
+		GH_MIDI\Components\Filter\ControlChangeFilterComponent.cs = GH_MIDI\Components\Filter\ControlChangeFilterComponent.cs
+		GH_MIDI\Components\Filter\FilterMIDIInComponent.cs = GH_MIDI\Components\Filter\FilterMIDIInComponent.cs
+		GH_MIDI\Components\Filter\NoteFilterComponent.cs = GH_MIDI\Components\Filter\NoteFilterComponent.cs
+		GH_MIDI\Components\Filter\PitchBendFilterComponent.cs = GH_MIDI\Components\Filter\PitchBendFilterComponent.cs
+		GH_MIDI\Components\Filter\PolyPressureFilterComponent.cs = GH_MIDI\Components\Filter\PolyPressureFilterComponent.cs
+		GH_MIDI\Components\Filter\ProgramChangeFilterComponent.cs = GH_MIDI\Components\Filter\ProgramChangeFilterComponent.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{F6A0DC40-98B1-4BA5-A6C1-2EA519207D70}"
+	ProjectSection(SolutionItems) = preProject
+		GH_MIDI\Models\Channel.cs = GH_MIDI\Models\Channel.cs
+		GH_MIDI\Models\Instrument.cs = GH_MIDI\Models\Instrument.cs
+		GH_MIDI\Models\InstrumentCategory.cs = GH_MIDI\Models\InstrumentCategory.cs
+		GH_MIDI\Models\OrderType.cs = GH_MIDI\Models\OrderType.cs
+		GH_MIDI\Models\Percussion.cs = GH_MIDI\Models\Percussion.cs
+		GH_MIDI\Models\Pitch.cs = GH_MIDI\Models\Pitch.cs
+		GH_MIDI\Models\ReorderedChannelCommand.cs = GH_MIDI\Models\ReorderedChannelCommand.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Filters", "Filters", "{68C17901-C872-4741-9B7F-A636470EE76F}"
+	ProjectSection(SolutionItems) = preProject
+		GH_MIDI\Models\Filters\AffectedNoteMessagesType.cs = GH_MIDI\Models\Filters\AffectedNoteMessagesType.cs
+		GH_MIDI\Models\Filters\ChannelPressureFilter.cs = GH_MIDI\Models\Filters\ChannelPressureFilter.cs
+		GH_MIDI\Models\Filters\ControlChangeFilter.cs = GH_MIDI\Models\Filters\ControlChangeFilter.cs
+		GH_MIDI\Models\Filters\FilterAffectionType.cs = GH_MIDI\Models\Filters\FilterAffectionType.cs
+		GH_MIDI\Models\Filters\FilterMIDIIn.cs = GH_MIDI\Models\Filters\FilterMIDIIn.cs
+		GH_MIDI\Models\Filters\NoteFilter.cs = GH_MIDI\Models\Filters\NoteFilter.cs
+		GH_MIDI\Models\Filters\PitchBendFilter.cs = GH_MIDI\Models\Filters\PitchBendFilter.cs
+		GH_MIDI\Models\Filters\PolyPressureFilter.cs = GH_MIDI\Models\Filters\PolyPressureFilter.cs
+		GH_MIDI\Models\Filters\ProgramChangeFilter.cs = GH_MIDI\Models\Filters\ProgramChangeFilter.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Icons", "Icons", "{35F13B60-90A2-4523-A1B8-22468F0FBCE2}"
+	ProjectSection(SolutionItems) = preProject
+		Icons\ChannelPressure_Icon.png = Icons\ChannelPressure_Icon.png
+		Icons\ControlChange_Icon.png = Icons\ControlChange_Icon.png
+		Icons\Decode_Icon.png = Icons\Decode_Icon.png
+		Icons\Filter_Icon.png = Icons\Filter_Icon.png
+		Icons\MIDIIn_Icon.png = Icons\MIDIIn_Icon.png
+		Icons\Note_Icon.png = Icons\Note_Icon.png
+		Icons\NoteOff_Icon.png = Icons\NoteOff_Icon.png
+		Icons\NoteOn_Icon.png = Icons\NoteOn_Icon.png
+		Icons\Percussion_Icon.png = Icons\Percussion_Icon.png
+		Icons\PitchBend_Icon.png = Icons\PitchBend_Icon.png
+		Icons\PolyPressure_Icon.png = Icons\PolyPressure_Icon.png
+		Icons\ProgramChange_Icon.png = Icons\ProgramChange_Icon.png
+		Icons\Salt_Icon.png = Icons\Salt_Icon.png
+		Icons\SelectTreeItems_Icon.png = Icons\SelectTreeItems_Icon.png
+		Icons\Store_Icon.png = Icons\Store_Icon.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug32|Any CPU = Debug32|Any CPU
+		Debug64|Any CPU = Debug64|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40404AB0-3F13-4427-9CCB-64804194CADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40404AB0-3F13-4427-9CCB-64804194CADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40404AB0-3F13-4427-9CCB-64804194CADA}.Debug32|Any CPU.ActiveCfg = Debug|Any CPU
+		{40404AB0-3F13-4427-9CCB-64804194CADA}.Debug32|Any CPU.Build.0 = Debug|Any CPU
+		{40404AB0-3F13-4427-9CCB-64804194CADA}.Debug64|Any CPU.ActiveCfg = Debug|Any CPU
+		{40404AB0-3F13-4427-9CCB-64804194CADA}.Debug64|Any CPU.Build.0 = Debug|Any CPU
+		{40404AB0-3F13-4427-9CCB-64804194CADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40404AB0-3F13-4427-9CCB-64804194CADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77930B49-6A92-4B82-B44D-D4EFDD3AC119}.Debug|Any CPU.ActiveCfg = Debug64|Any CPU
+		{77930B49-6A92-4B82-B44D-D4EFDD3AC119}.Debug|Any CPU.Build.0 = Debug64|Any CPU
+		{77930B49-6A92-4B82-B44D-D4EFDD3AC119}.Debug32|Any CPU.ActiveCfg = Debug32|Any CPU
+		{77930B49-6A92-4B82-B44D-D4EFDD3AC119}.Debug32|Any CPU.Build.0 = Debug32|Any CPU
+		{77930B49-6A92-4B82-B44D-D4EFDD3AC119}.Debug64|Any CPU.ActiveCfg = Debug64|Any CPU
+		{77930B49-6A92-4B82-B44D-D4EFDD3AC119}.Debug64|Any CPU.Build.0 = Debug64|Any CPU
+		{77930B49-6A92-4B82-B44D-D4EFDD3AC119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77930B49-6A92-4B82-B44D-D4EFDD3AC119}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40C31AF8-0CAD-455D-B4BB-ECC413D4EB1D} = {B948810B-8F47-4008-B99B-93A8E66F7871}
+		{DD25D036-4EEF-41C3-9D1A-E59A088D1FD8} = {40C31AF8-0CAD-455D-B4BB-ECC413D4EB1D}
+		{88424C8D-4174-4508-B4F0-057BD203F571} = {40C31AF8-0CAD-455D-B4BB-ECC413D4EB1D}
+		{F6A0DC40-98B1-4BA5-A6C1-2EA519207D70} = {B948810B-8F47-4008-B99B-93A8E66F7871}
+		{68C17901-C872-4741-9B7F-A636470EE76F} = {F6A0DC40-98B1-4BA5-A6C1-2EA519207D70}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D05CC26-3B4A-4D07-94C2-3FDE08540D26}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40404AB0-3F13-4427-9CCB-64804194CADA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiliumRhino6</RootNamespace>
+    <AssemblyName>MiliumRhino6</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sanford.Multimedia.Midi">
+      <HintPath>..\Sanford.Multimedia.Midi.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="RhinoCommon">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Programme\Rhino 6\System\rhinocommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Grasshopper">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Programme\Rhino 6\Plug-ins\Grasshopper\Grasshopper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GH_IO">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Programme\Rhino 6\Plug-ins\Grasshopper\GH_IO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GH_MIDI\Components\ButtonComponent.cs" />
+    <Compile Include="GH_MIDI\Components\ButtonComponentAttributes.cs" />
+    <Compile Include="GH_MIDI\Components\DecodeMIDIInComponent.cs" />
+    <Compile Include="GH_MIDI\Components\Enums\ChannelValueList.cs" />
+    <Compile Include="GH_MIDI\Components\Enums\ControllerValueList.cs" />
+    <Compile Include="GH_MIDI\Components\Enums\PercussionValueList.cs" />
+    <Compile Include="GH_MIDI\Components\Enums\SelectInstrumentComponent.cs" />
+    <Compile Include="GH_MIDI\Components\Enums\SelectPitchComponent.cs" />
+    <Compile Include="GH_MIDI\Components\Filter\ChannelPressureFilterComponent.cs" />
+    <Compile Include="GH_MIDI\Components\Filter\ControlChangeFilterComponent.cs" />
+    <Compile Include="GH_MIDI\Components\Filter\FilterMIDIInComponent.cs" />
+    <Compile Include="GH_MIDI\Components\Filter\NoteFilterComponent.cs" />
+    <Compile Include="GH_MIDI\Components\Filter\PitchBendFilterComponent.cs" />
+    <Compile Include="GH_MIDI\Components\Filter\PolyPressureFilterComponent.cs" />
+    <Compile Include="GH_MIDI\Components\Filter\ProgramChangeFilterComponent.cs" />
+    <Compile Include="GH_MIDI\Components\MIDIInComponent.cs" />
+    <Compile Include="GH_MIDI\Components\SelectSpecificGHObjectsComponent.cs" />
+    <Compile Include="GH_MIDI\Components\SelectTreeItemsComponent.cs" />
+    <Compile Include="GH_MIDI\Components\StoreMIDIMessagesComponent.cs" />
+    <Compile Include="GH_MIDI\Components\SynchronizeSlidersComponent.cs" />
+    <Compile Include="GH_MIDI\Components\SynchronizeTogglesComponent.cs" />
+    <Compile Include="GH_MIDI\Models\Channel.cs" />
+    <Compile Include="GH_MIDI\Models\Filters\AffectedNoteMessagesType.cs" />
+    <Compile Include="GH_MIDI\Models\Filters\ChannelPressureFilter.cs" />
+    <Compile Include="GH_MIDI\Models\Filters\ControlChangeFilter.cs" />
+    <Compile Include="GH_MIDI\Models\Filters\FilterAffectionType.cs" />
+    <Compile Include="GH_MIDI\Models\Filters\FilterMIDIIn.cs" />
+    <Compile Include="GH_MIDI\Models\Filters\NoteFilter.cs" />
+    <Compile Include="GH_MIDI\Models\Filters\PitchBendFilter.cs" />
+    <Compile Include="GH_MIDI\Models\Filters\PolyPressureFilter.cs" />
+    <Compile Include="GH_MIDI\Models\Filters\ProgramChangeFilter.cs" />
+    <Compile Include="GH_MIDI\Models\Instrument.cs" />
+    <Compile Include="GH_MIDI\Models\InstrumentCategory.cs" />
+    <Compile Include="GH_MIDI\Models\OrderType.cs" />
+    <Compile Include="GH_MIDI\Models\Percussion.cs" />
+    <Compile Include="GH_MIDI\Models\Pitch.cs" />
+    <Compile Include="GH_MIDI\Models\ReorderedChannelCommand.cs" />
+    <Compile Include="GH_MIDI\MonitorInputDevices.cs" />
+    <Compile Include="MiliumRhino6Info.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChannelPressure_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlChange_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Decode_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filter_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIDIIn_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Note_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoteOff_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoteOn_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Percussion_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PitchBend_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolyPressure_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProgramChange_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salt_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Store_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectTreeItems_Icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>Copy "$(TargetPath)" "$(TargetDir)$(ProjectName).gha"
+Erase "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <FallbackCulture>en-US</FallbackCulture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartProgram>D:\Programme\Rhino 6\System\Rhino.exe</StartProgram>
+    <StartArguments>
+    </StartArguments>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
+</Project>

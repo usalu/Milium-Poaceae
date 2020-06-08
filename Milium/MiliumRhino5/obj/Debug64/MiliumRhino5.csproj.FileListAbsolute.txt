@@ -1,0 +1,12 @@
+D:\Dokumente\GitHub\Milium-Poaceae\Milium\MiliumRhino5\obj\Debug64\MiliumRhino5.csprojAssemblyReference.cache
+D:\Dokumente\GitHub\Milium-Poaceae\Milium\MiliumRhino5\obj\Debug64\MiliumRhino5.Properties.Resources.resources
+D:\Dokumente\GitHub\Milium-Poaceae\Milium\MiliumRhino5\obj\Debug64\MiliumRhino5.csproj.GenerateResource.cache
+D:\Dokumente\GitHub\Milium-Poaceae\Milium\MiliumRhino5\obj\Debug64\MiliumRhino5.csproj.CoreCompileInputs.cache
+D:\Dokumente\GitHub\Milium-Poaceae\Milium\MiliumRhino5\bin\MiliumRhino5.dll
+D:\Dokumente\GitHub\Milium-Poaceae\Milium\MiliumRhino5\bin\MiliumRhino5.pdb
+D:\Dokumente\GitHub\Milium-Poaceae\Milium\MiliumRhino5\bin\RhinoCommon.dll
+D:\Dokumente\GitHub\Milium-Poaceae\Milium\MiliumRhino5\bin\Sanford.Multimedia.Midi.dll
+D:\Dokumente\GitHub\Milium-Poaceae\Milium\MiliumRhino5\bin\RhinoCommon.xml
+D:\Dokumente\GitHub\Milium-Poaceae\Milium\MiliumRhino5\obj\Debug64\MiliumRhino5.csproj.CopyComplete
+D:\Dokumente\GitHub\Milium-Poaceae\Milium\MiliumRhino5\obj\Debug64\MiliumRhino5.dll
+D:\Dokumente\GitHub\Milium-Poaceae\Milium\MiliumRhino5\obj\Debug64\MiliumRhino5.pdb
