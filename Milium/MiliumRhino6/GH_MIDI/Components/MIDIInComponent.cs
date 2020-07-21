@@ -73,7 +73,10 @@ namespace MiliumRhino6.GH_MIDI.Components
             MonitorInputDevices.InputDeviceEvent += UpdateMidiDevices;
             ComponentCount += 1;
             if (ComponentCount == 1)
+            {
                 MonitorInputDevices.Run = true;
+                UpdateMidiDevices(this, new EventArgs());
+            }
         }
 
         /// <summary>

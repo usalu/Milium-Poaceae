@@ -32,7 +32,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GH_IO">
+      <HintPath>..\..\..\..\..\Programme\Rhino6\Plug-ins\Grasshopper\GH_IO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Grasshopper">
+      <HintPath>..\..\..\..\..\Programme\Rhino6\Plug-ins\Grasshopper\Grasshopper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="RhinoCommon">
+      <HintPath>..\..\..\..\..\Programme\Rhino6\System\RhinoCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sanford.Multimedia.Midi">
       <HintPath>..\Sanford.Multimedia.Midi.dll</HintPath>
     </Reference>
@@ -43,21 +55,6 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="RhinoCommon">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Programme\Rhino 6\System\rhinocommon.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Grasshopper">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Programme\Rhino 6\Plug-ins\Grasshopper\Grasshopper.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="GH_IO">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Programme\Rhino 6\Plug-ins\Grasshopper\GH_IO.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GH_MIDI\Components\ButtonComponent.cs" />
@@ -76,6 +73,7 @@
     <Compile Include="GH_MIDI\Components\Filter\PolyPressureFilterComponent.cs" />
     <Compile Include="GH_MIDI\Components\Filter\ProgramChangeFilterComponent.cs" />
     <Compile Include="GH_MIDI\Components\MIDIInComponent.cs" />
+    <Compile Include="GH_MIDI\Components\SynchronizeSlidersRelative.cs" />
     <Compile Include="GH_MIDI\Components\SelectSpecificGHObjectsComponent.cs" />
     <Compile Include="GH_MIDI\Components\SelectTreeItemsComponent.cs" />
     <Compile Include="GH_MIDI\Components\StoreMIDIMessagesComponent.cs" />
