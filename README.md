@@ -3,6 +3,6 @@ Open source Grasshopper plugin that allows to synchronize Grasshopper with Midi.
 
 ##Examples:
 
-![ExampleOne](https://github.com/usaluz/Milium-Poaceae/blob/master/docs/Examples/MiliumExample1.gif | width = 1000)
-![ExampleTwo](https://github.com/usaluz/Milium-Poaceae/blob/master/docs/Examples/MiliumExample2.gif | width = 1000)
+![ExampleOne](https://github.com/usaluz/Milium-Poaceae/blob/master/docs/Examples/MiliumExample1.gif | width=1000)
+![ExampleTwo](https://github.com/usaluz/Milium-Poaceae/blob/master/docs/Examples/MiliumExample2.gif | width=1000)
 
